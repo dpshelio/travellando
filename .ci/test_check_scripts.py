@@ -12,6 +12,7 @@ def read_fixture(expected):
     with open(os.path.join(os.path.dirname(__file__),
                            'fixtures_dir.yaml')) as fixture_file:
         fixtures = yaml.load(fixture_file, Loader=yaml.FullLoader)
+
     return fixtures[expected]
 
 def create_files(tree):
